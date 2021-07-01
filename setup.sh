@@ -128,4 +128,4 @@ lxc file push $CONFIG_FILE $CONTAINER/build_config.sh
 
 lxc exec $CONTAINER /build.sh
 
-lxc file pull $CONTAINER$SDK_DIR/out/target/product/$BOARD_AMLOGIC_NAME/aml_upgrade_package.img $board.img
+lxc file pull $CONTAINER$SDK_DIR/out/target/product/${BOARD_AMLOGIC_NAMES[$BOARD]}/aml_upgrade_package.img $BOARD.img
