@@ -48,7 +48,7 @@ cd ../../..
 cd common
 if ! git remote show lc-github; then
 git remote add lc-github https://github.com/libre-computer-project/amlogic-common.git
-git fetch lc-github android-p-amlogic-20190415-aosp
+git fetch lc-github $BRANCH
 git rebase FETCH_HEAD
 fi
 cd ..
@@ -56,7 +56,7 @@ cd ..
 cd device/amlogic
 if ! git remote show lc-github; then
 git remote add lc-github https://github.com/libre-computer-project/amlogic-device-amlogic.git
-git fetch lc-github android-p-amlogic-20190415-aosp
+git fetch lc-github $BRANCH
 git rebase FETCH_HEAD
 fi
 cd ../..
@@ -64,7 +64,7 @@ cd ../..
 cd vendor/amlogic/common/apps/DroidTvSettings
 if ! git remote show lc-github; then
 git remote add lc-github https://github.com/libre-computer-project/amlogic-vendor-amlogic-common-apps-DroidTvSettings.git
-git fetch lc-github android-p-amlogic-20190415-aosp
+git fetch lc-github $BRANCH
 git rebase FETCH_HEAD
 fi
 cd ../../../../..
